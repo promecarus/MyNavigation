@@ -35,5 +35,14 @@
 		android:id="@+id/detailCategoryFragment"
 		android:name="com.promecarus.mynavigation.DetailCategoryFragment"
 		android:label="fragment_detail_category"
-		tools:layout="@layout/fragment_detail_category" />
+		tools:layout="@layout/fragment_detail_category">
+		<argument
+			android:name="name"
+			android:defaultValue="default name"
+			app:argType="string" />
+		<argument
+			android:name="stock"
+			android:defaultValue="0L"
+			app:argType="long" />
+	</fragment>
 </navigation>
